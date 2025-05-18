@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+
 import 'story_brain.dart';
 
 void main() => runApp(Destini());
 
 class Destini extends StatelessWidget {
+  const Destini({super.key});
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
@@ -11,10 +15,14 @@ class Destini extends StatelessWidget {
     );
   }
 }
+
 StoryBrain storyBrain = StoryBrain();
 
 class StoryPage extends StatefulWidget {
-  _StoryPageState createState() => _StoryPageState();
+  const StoryPage({super.key});
+
+  @override
+  State<StoryPage> createState() => _StoryPageState();
 }
 
 class _StoryPageState extends State<StoryPage> {
